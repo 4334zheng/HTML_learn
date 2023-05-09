@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>这个页面用于学习盒子、边框、轮廓等相关属性</title>
+    <style>
+        div{
+            background-color: rgb(255, 0, 0);
+            width: 300px;
+            border: 25px solid green;
+            padding: 25px;
+            margin: 25px;
+        }
+        p.none {border-style: none;}
+        p.dotted {border-style: dotted;}
+        p.groove {border-style: groove;}
+        p.inset{border-style: inset;}
+        p.mix{border-style: dotted solid double ridge;}
+    </style>
+</head>
+<body>
+    <h1>演示一个盒子</h1>
+    <p>属性值的说明：<br>
+    margin:外边距，清楚边框外的区域，外边距是透明的<br>
+    border:边框，围绕在内边距和内容外的边框<br>
+    padding:内边距，清楚内容周围的区域，内边距是透明的<br>
+    content:内容，盒子里面的内容，显示文本和图像</p>
+    <p>现在在style定义了一个盒子div的样式，要使用它就直接只用div标签就好了</p>
+    <div>这是一个盒子</div>
+
+    <h1>边框设置</h1>
+    <p>在body中定义文本并设置相应的class，在class中定义文本边框样式</p>
+    <p class="none">没有边框</p>
+    <p class="dotted">虚线边框</p>
+    <p class="groove">凹槽边框</p>
+    <p class="inset">嵌入边框</p>
+    <p class="mix">混合边框，在border-style中设置4条边的类型</p>
+    <p>更多边框类型见：<a href="https://www.runoob.com/try/try.php?filename=trycss_border-style" target="_blank" rel="noopener noreferrer">MORE</a></p>
+</body>
